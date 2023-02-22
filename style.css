@@ -1,0 +1,275 @@
+section{
+    padding: 4rem 0 2rem;
+}
+img{
+   width: 100%; 
+}
+body{
+    color: var(--text-color);
+}
+.container{
+ max-width: 1068px;   
+ margin-left: auto;
+ margin-right: auto;
+}
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 20px 35px;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+.column_side{
+    float: left;
+    height: 300px;
+    width: 400px;
+    margin-left: 200px;
+    border: 5px solid grey;
+    box-shadow: 5px 5px 5px gray;
+}
+.toggle{
+    height: 300px;
+    width: 400px;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.logo span{
+    color: red;
+}
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar a:hover ,
+    .navbar .active {
+    color: red;
+    border-bottom: 3px solid black;
+}
+.home {
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+.home-text{
+    padding-left: 130px;
+}
+.home-text h1{
+    font-size: 2.4rem;
+}
+.home-text span{
+    color: red;
+}
+.home-text p{
+    font-size: 0.93rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+}
+.btn {
+    padding: 10px 22px;
+    background: red;
+    color: white;
+    font-weight: 400;
+}
+.btn:hover{
+    background: #fd052f;
+}
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-weight: 500;
+    color: red;
+}
+.heading p {
+    font-size: 0.938rem;
+    font-weight: 300;
+}
+.cars-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.cars-container .box{
+    flex: 1 1 17rem;
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.cars-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.cars-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.cars-container .box h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: red;
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+.cars-container .box:hover h2{
+    background: white;
+    color: red;
+}
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img {
+    flex: 1 1 21rem;
+}
+.about-text {
+    flex: 1 1 21rem;
+}
+.about-text span{
+    font-weight: 500;
+    color: red;
+}
+.about-text h2 {
+    font-size: 1.7rem;
+}
+.about-text p {
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1..4rem;
+}
+.parts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.parts-container .box{
+    flex: 1 1 17rem;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #f6f6f6;
+    border-radius: 0.5rem;
+}
+
+.parts-container .box h3{
+font-size: 1.1rem;
+font-weight: 600;
+}
+.parts-container .box span{
+font-size: 1.1rem;
+font-weight: 600;
+color: white; 
+}
+.parts-container .box .bx{
+color: white;
+margin: 0.8rem; 
+}
+.parts-container .box .btn{
+max-width: 120px;
+}
+.parts-container .box .details{
+display: flex;
+align-items: center;
+position: absolute;
+bottom: 1.8rem;
+right: 1rem;
+font-size: 1tem;
+color:var(--text-color);
+}
+.parts-container .box .details:hover{
+color: white;
+text-decoration: underline;
+}
+.footer{
+    background-color: rgb(82, 49, 49);
+    color: white;
+    margin: 100px;
+    text-align: center;
+    padding: 10px;
+}
+.Service{
+    height: 200px;
+    width: 500px;
+}
+.emergency-form{
+    background-color: rgb(214, 253, 240);
+    margin-top: 20px;
+    border: solid;
+    display: none;
+  }
+  #map {
+    height: 400px;
+    width: 100%;
+}
+#login img{
+    width: 100px;
+    width: 100px;
+}
+#login {
+    text-align: center;
+    box-shadow: 5px 5px 5px grey;
+    margin: 10px 500px 0px 500px;
+    border: 2px solid gray;
+}
+#login h1 {
+    color: green;
+}
+#login .inline{
+    border: 2px solid;
+    border-radius: 2px;
+}
+#Registration{
+    text-align: left;
+    box-shadow: 5px 5px 5px grey;
+    margin: 10px 480px 0px 480px;
+    border: 2px solid gray;
+    padding: 10px;
+}
+#Registration h1 {
+    color: green;
+    text-align: center;
+}
+#left-align{
+    text-align: right;
+}
+#right-align{
+    text-align: left;
+}

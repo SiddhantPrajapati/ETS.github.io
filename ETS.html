@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETS-Emergency Tow System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ETS.js">
+        
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <a href="#" class="logo">Emeregency <span>Tow</span> System</a>
+            <ul class="navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#cars">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#parts">Contacts</a></li>
+                <li><a href="ETS - Login.html" style="background-color: aqua; padding: 5px;">Login</a></li>
+                <li><a href="ETS - Registration.html" style="background-color: aqua; padding: 5px;">SignUp</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>We are useful to <br> Tow your <span>Vehicle</span> From<br>Where you want</h1>
+            <p>
+                Use below button only when in <span><b> Emeregency</b></span> <br><br>
+                By pressing this button you can inform nearest <br>
+                Police Station, Fire Station, Tow Truck and Ambulance.
+            </p>
+            <a onclick="hide()" class="btn" >Emeregency</a>
+            <form action="" class="emergency-form" id="form1">
+                <table>
+                  <tr>
+                    <td>Select Services that you want to call:</td>
+                    <td>  <input type="checkbox" name="service" value="police" checked/></td>
+                    <td><label for="service">Police Station</label></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="service" value="fire-brigade" checked/></td>
+                    <td><label for="service">Fire brigade</label></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="service" value="Ambulance" checked/></td>
+                    <td><label for="service">Ambulance</label></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="service" value="tow-truck" checked/><br></td>
+                    <td><label for="service">Tow Truck</label></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="location" value="location" checked/></td>
+                    <td><label for="service">Share your location.</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="submit"/></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </form>
+        </div>
+        <div class="column_side">
+
+            <div class="imageSlides fade">
+                <img class="toggle" src="download (1).jfif" alt="tow-car">
+            </div>
+            <div class="imageSlides fade">
+                <img class="toggle" src="download (2).jfif" alt="tow-car2">
+            </div>
+            <div class="imageSlides fade">
+                <img class="toggle" src="download.jfif" alt="tow-car3">
+            </div>
+            <div class="imageSlides fade">
+                <img class="toggle" src="Lakeland-Tow-Truck-24-7-Emergency-Towing-Service-1.jpg" alt="tow-car4">
+            </div>
+            <div class="imageSlides fade">
+                <img class="toggle" src="Towing_Services.jpg" alt="tow-car5">
+            </div>
+          
+        </div>
+    </section>
+    <hr>
+
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span>Services</span>
+            <h2>We Provide Below Services.</h2>
+            <p>Below Services that is provided by our website.</p>
+        </div>
+
+        <div class="cars-container container">
+            <div class="box">
+                <img src="Tow truck.jpeg" alt="">
+                <h2><a href="ETS - Tow.html">Tow Truck</a> </h2>
+            </div>
+            <div class="box">
+                <img src="Service center.jpg" alt="">
+                <h2><a href="ETS - Service.html">Service Center</a> </h2>
+            </div>
+            <div class="box">
+                <img src="Emergency.webp" alt="">
+                <h2><a href="#home">Emeregency</a></h2>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="about container" id="about">
+        <div class="about-img">
+            <div>
+                <div class="imageS fade">
+                    <img class="Service" src="Screenshot_1.jpg" alt="tow-car">
+                </div>
+                <div class="imageS fade">
+                    <img class="Service" src="Screenshot_2.jpg" alt="tow-car2">
+                </div>
+                <div class="imageS fade">
+                    <img class="Service" src="Screenshot_3.jpg" alt="tow-car3">
+                </div>
+                <div class="imageS fade">
+                    <img class="Service" src="Screenshot_4.jpg" alt="tow-car4">
+                </div>
+                <div class="imageS fade">
+                    <img class="Service" src="Screenshot_5.jpg" alt="tow-car5">
+                </div>
+            </div>
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>Provide quick Action <br>in <span>Emeregency</span> <br>On One click</h2>
+            <p>Our main aim is provide quick action in <br>emergency situation along with provide tow Services</p>
+
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <hr>
+    <section style="text-align: center; bottom: 0;">
+        <div><h1>Use below map to find service center, tow truck center what you want</h1></div>
+    </section>
+    <section class="home">
+        
+        <!--The div element for the map -->
+        <div id="map"></div>
+    
+        <!--Add a script by google -->
+        <script src=
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyCLtH_BtktX0hosNRrL2MCv94Ali48NVJI&callback=initMap&libraries=&v=weekly"
+            async>
+        </script>
+    
+        <script>
+    
+            // Initialize and add the map
+            function initMap() {
+    
+                // The location of Geeksforgeeks office
+                const gfg_office = {
+                    lat: 28.50231,
+                    lng: 77.40548
+                };
+    
+                // Create the map, centered at gfg_office
+                const map = new google.maps.Map(
+                        document.getElementById("map"), {
+    
+                    // Set the zoom of the map
+                    zoom: 17.56,
+                    center: gfg_office,
+                });
+            }
+        </script>
+
+    </section>
+    <section class="parts" id="parts">
+        <div class="footer">
+            <h2>&nbsp; &nbsp; &nbsp; Contact Us</h2>
+            <ul style="text-decoration: none; " type="none">
+                <li><a style="color: white;" href="mailto:siddhantprajapati6377@gmail.com? subject=Any Feedback">Siddhant Prajapati</a></li>
+                <li><a style="color: white;" href="mailto:devanshubhatti25@gmail.com? subject=Any Feedback">Devanshu Bhatti</a></li>
+                <li><a style="color: white;" href="mailto:bharatvala195@gmail.com? subject=Any Feedback">Bharat Vala</a></li>
+                <li><a style="color: white;" href="mailto:siddhantprajapati6377@gmail.com? subject=Any Feedback">Mitesh Jethava</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

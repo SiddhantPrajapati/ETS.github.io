@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETS-Emergency Tow System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ETS.js">
+        
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <a href="#" class="logo">Emeregency <span>Tow</span> System</a>
+            <ul class="navbar">
+                <li><a href="ETS.html" class="active">Home</a></li>
+                <li><a href="#parts">Contacts</a></li>
+                <li><a href="ETS - Login.html" style="background-color: aqua; padding: 5px;">Login</a></li>
+                <li><a href="ETS - Registration.html" style="background-color: aqua; padding: 5px;">SignUp</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <center>
+            <form action="" id="Registration">
+                <table>
+                    <tr>
+                        <td colspan="3"><h1>Vehicle Service Center</h1></td>
+                    </tr>
+                    <tr>
+                        <td>Search Service center <br>
+                        by name :
+                        </td>
+                        <td><input type="text" name="search-tow" maxlength="30" value=""></td>
+                        <td><button>Search</button></td>
+                    </tr>
+                    <tr>
+                        <td>City Name :</td>
+                        <td><input type="text" name="city" value=""></td>
+                    </tr>
+                    <tr>
+                        <td id="left-align"><label for="V">Vehicle Type</label><br></td>
+                            <td id="right-align">
+                                <input type="radio" id="vehicle0" name="vehicle0" value="Bike">
+                                <label for="vehicle0"> Truck</label><br>
+                                <input type="radio" id="vehicle1" name="vehicle0" value="Car">
+                                <label for="vehicle1"> Car</label><br>
+                                <input type="radio" id="vehicle3" name="vehicle0" value="Car">
+                                <label for="vehicle2"> Bike</label><br>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td id="left-align"><label for="V">Vehicle Model</label><br></td>
+                            <td id="right-align">
+                                <input type="checkbox" id="vehicle0" name="vehicle0" value="Bike">
+                                <label for="vehicle0"> Audi</label><br>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Car">
+                                <label for="vehicle1"> Fortuner</label><br>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                <label for="vehicle2"> Tata motors</label><br>
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Car">
+                                <label for="vehicle3"> Ford</label><br>
+                                <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+                                <label for="vehicle4"> Maruti Suzuki</label><br><br>
+                            </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="left-align"><input type="checkbox" id="vehicle3" name="vehicle3" value="Share Location"></td>
+                        <td id="right-align"><label for="vehicle3"> Share your location</label><br></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" name="reset" value="Reset"></td>   
+                        <td colspan="2"><input type="submit" value="Submit"></td>    
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </section>
+    <section>
+        <!--The div element for the map -->
+        <div id="map"></div>
+    
+        <!--Add a script by google -->
+        <script src=
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyCLtH_BtktX0hosNRrL2MCv94Ali48NVJI&callback=initMap&libraries=&v=weekly"
+            async>
+        </script>
+    
+        <script>
+    
+            // Initialize and add the map
+            function initMap() {
+    
+                // The location of Geeksforgeeks office
+                const gfg_office = {
+                    lat: 28.50231,
+                    lng: 77.40548
+                };
+    
+                // Create the map, centered at gfg_office
+                const map = new google.maps.Map(
+                        document.getElementById("map"), {
+    
+                    // Set the zoom of the map
+                    zoom: 17.56,
+                    center: gfg_office,
+                });
+            }
+        </script>
+
+    </section>
+    <section class="parts" id="parts">
+        <div class="footer">
+            <h2>&nbsp; &nbsp; &nbsp; Contact Us</h2>
+            <ul style="text-decoration: none; " type="none">
+                <li><a style="color: white;" href="mailto:siddhantprajapati6377@gmail.com? subject=Any Feedback">Siddhant Prajapati</a></li>
+                <li><a style="color: white;" href="mailto:devanshubhatti25@gmail.com? subject=Any Feedback">Devanshu Bhatti</a></li>
+                <li><a style="color: white;" href="mailto:bharatvala195@gmail.com? subject=Any Feedback">Bharat Vala</a></li>
+                <li><a style="color: white;" href="mailto:siddhantprajapati6377@gmail.com? subject=Any Feedback">Mitesh Jethava</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

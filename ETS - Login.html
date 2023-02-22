@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETS-Emergency Tow System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity=
+        "sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+		crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <a href="#" class="logo">Emeregency <span>Tow</span> System</a>
+            <ul class="navbar">
+                <li><a href="ETS.html" class="active">Home</a></li>
+                <li><a href="#parts">Contacts</a></li>
+                <li><a href="ETS - Login.html" style="background-color: aqua; padding: 5px;">Login</a></li>
+                <li><a href="ETS - Registration.html" style="background-color: aqua; padding: 5px;">SignUp</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <form action="" id="login">
+            <table>
+                <tr>
+                    <td colspan="2"><h1>User Login</h1></td>
+                </tr>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" name="uname" value=""></td>
+                </tr>
+                
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" name="passwd" value=""></td>
+                </tr>
+                <tr>
+                    <td>Enter Captcha :</td>
+                    <td><input type="text" id="submit" placeholder="Captcha code"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="inline" onclick="generate()">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="image" class="inline" selectable="False">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="Submit" value="Submit"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">OR</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><a href=""><img src="Google-Symbol.png" alt=""></a></td>
+                    <td><a href=""><img src="Facebook-logo (1).png" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Don't have account? <span><a href="">SignUp</a></span> 
+                    </td>
+                </tr>
+    
+            </table>
+        </form>
+    </section>
+    <section class="parts" id="parts">
+        <div class="footer">
+            <h2>&nbsp; &nbsp; &nbsp; Contact Us</h2>
+            <ul style="text-decoration: none; " type="none">
+                <li><a style="color: white;" href="mailto:siddhantprajapati6377@gmail.com? subject=Any Feedback">Siddhant Prajapati</a></li>
+                <li><a style="color: white;" href="mailto:devanshubhatti25@gmail.com? subject=Any Feedback">Devanshu Bhatti</a></li>
+                <li><a style="color: white;" href="mailto:bharatvala195@gmail.com? subject=Any Feedback">Bharat Vala</a></li>
+                <li><a style="color: white;" href="mailto:siddhantprajapati6377@gmail.com? subject=Any Feedback">Mitesh Jethava</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <script src="ETS.js"></script>
+</body>
+
+</html>
